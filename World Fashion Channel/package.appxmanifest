@@ -1,56 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Package
-  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
-  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
-  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-  IgnorableNamespaces="uap mp">
-
-  <Identity
-    Name="c1638866-8129-4f9a-aa08-fdce65dd3579"
-    Version="1.0.0.0"
-    Publisher="CN=cochu" />
-
-  <mp:PhoneIdentity PhoneProductId="c1638866-8129-4f9a-aa08-fdce65dd3579" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="31170.WorldFashionChannel" Version="1.1.0.0" Publisher="CN=E700FA68-A7C6-4140-8B94-9B97866AB732" />
+  <mp:PhoneIdentity PhoneProductId="509b1be1-750c-4b0b-a28c-2a7e27fa75fe" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>World Fashion Channel</DisplayName>
-    <PublisherDisplayName>cochu</PublisherDisplayName>
+    <PublisherDisplayName>Вова Дальний</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
-
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
   </Dependencies>
-
   <Resources>
     <Resource Language="x-generate" />
   </Resources>
-
   <Applications>
-    <Application 
-      Id="App"
-      StartPage="https://example.com">
-
+    <Application Id="App" StartPage="https://yastatic.net/yandex-video-player-iframe-api-bundles/1.0-236/?mq_url=https%3A%2F%2Fstrm.yandex.ru%2Fdvr%2Ffashion%2Ffashion0.m3u8%3Ffrom_block%3Dmedia-footer_stream_item%26reqid">
       <uap:ApplicationContentUriRules>
-        <uap:Rule Type="include" WindowsRuntimeAccess="all" Match="https://example.com" />
+        <uap:Rule Match="https://yastatic.net/yandex-video-player-iframe-api-bundles/1.0-236/?mq_url=https%3A%2F%2Fstrm.yandex.ru%2Fdvr%2Ffashion%2Ffashion0.m3u8%3Ffrom_block%3Dmedia-footer_stream_item%26reqid" Type="include" WindowsRuntimeAccess="all" />
       </uap:ApplicationContentUriRules>
-
-      <uap:VisualElements
-        DisplayName="World Fashion Channel"
-        Description="World Fashion Channel"
-        BackgroundColor="transparent"
-        Square150x150Logo="images\Square150x150Logo.png"
-        Square44x44Logo="images\Square44x44Logo.png">
-
-        <uap:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" />
+      <uap:VisualElements DisplayName="World Fashion Channel" Description="World Fashion Channel" BackgroundColor="transparent" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
+        <uap:DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" Square310x310Logo="images\LargeTile.png" Square71x71Logo="images\SmallTile.png">
+        </uap:DefaultTile>
         <uap:SplashScreen Image="images\splashscreen.png" />
       </uap:VisualElements>
-
     </Application>
   </Applications>
-
   <Capabilities>
     <Capability Name="internetClient" />
   </Capabilities>
-
 </Package>
